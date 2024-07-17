@@ -34,7 +34,7 @@ export const GET = async (req: Request) => {
         const payload: ActionGetResponse = {
             title: DEFAULT_TITLE,
             icon:
-                DEFAULT_AVATAR ?? new URL("/cute_pic.jpeg", requestUrl.origin).toString(),
+                DEFAULT_AVATAR ?? new URL("/download.jpg", requestUrl.origin).toString(),
             description: DEFAULT_DESCRIPTION,
             label: "Transfer", // this value will be ignored since `links.actions` exists
             links: {
